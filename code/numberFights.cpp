@@ -11,6 +11,7 @@ int getUserInput() {
     return a;
 }
 
+//you can't call void on a main statement, rather you shouldn't. if you do, the compiler will return a zero no matter what. still. don't do it. bad juju and stuff. 
 int main() {
     
     cout << "What's your favorite number?" << endl; 
