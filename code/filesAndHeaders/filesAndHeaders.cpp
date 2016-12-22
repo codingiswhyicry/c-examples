@@ -1,9 +1,11 @@
 #include <iostream>
+//this include function uses <> because it's in the STD namespace 
+#include "addFunction.h"
+//this include uses "" because it is not in a namespace, and is contained within the complier
+
 using namespace std; 
 
-//the function add is in a separate file, and is declared as a function prototype here
-
-int add(int x, int y);
+//the function add is declared in the header file "addFunction.h", while the code is defined in the cpp file "addFunction.cpp"
 
 int main() {
     
