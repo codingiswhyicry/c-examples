@@ -1,7 +1,7 @@
 #include <iostream>
-//this include function uses <> because it's in the STD namespace 
+//this include function uses <> because it's included within the complier
 #include "addFunction.h"
-//this include uses "" because it is not in a namespace, and is contained within the complier
+//this include uses "" because it is not included within the complier
 
 using namespace std; 
 
