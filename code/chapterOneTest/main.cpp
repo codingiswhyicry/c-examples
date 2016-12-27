@@ -1,9 +1,7 @@
 #include <iostream>
+#include "io.h"
 using namespace std; 
 
-int readNumber(); 
-
-int writeNumber(int x, int y);
 //main function of the program 
 int main() {
     
