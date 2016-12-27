@@ -1,23 +1,9 @@
 #include <iostream>
 using namespace std; 
 
-//creates function readNumber()
-int readNumber() {
-    
-    cout << "can I have an integer?" << endl; 
-    
-    int number; 
-    cin >> number; 
-    
-    return number; 
-}
+int readNumber(); 
 
-//creates function writeNumber()
-int writeNumber(int x, int y) {
-    
-    return x + y;
-}
-
+int writeNumber(int x, int y);
 //main function of the program 
 int main() {
     
