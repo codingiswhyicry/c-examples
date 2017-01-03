@@ -35,9 +35,12 @@ int main() {
     
     int copy = 43; //this is copy initialization 
     
-    int direct(134); //direct initialization is better than copy, especially when it comes to assignment 
+    signed int x = 12233; 
     
-    int uniform{1244}; //this is uniform initialization, which works with c++ 11 compilers
+    unsigned int y = 8888;
+    //unsigned means an integer that is not negative
+    
+    int direct(134); //direct initialization is better than copy, especially when it comes to assignment 
     
     int thisIsAVar; 
     thisIsAVar = 38; // this is an example of copy assignment, which means that a value is given a value after it is initialized
