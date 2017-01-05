@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-#include <sstream>
 using namespace std; 
 
 
@@ -8,7 +7,7 @@ struct drinks {
     
     int drinkTemp; 
     string drinkName; 
-    unsigned float drinkCost;    
+    float drinkCost;    
     
 } yourDrink;
 
@@ -26,15 +25,15 @@ string getName() {
     
     string name; 
     cout << "What's the name of your drink?" << endl; 
-    cin << name; 
+    cin >> name; 
     return name;
 }
 
-unsigned float getCost() {
+float getCost() {
     
     cout << "You don't get to choose your drink cost. Just assume it's really expensive." << endl; 
     
-    const unsigned float myCost = 4.75;
+     float myCost = 4.75;
     
     return myCost;
 }
@@ -45,6 +44,7 @@ int main() {
     yourDrink.drinkName = getName();
     yourDrink.drinkCost = getCost(); 
     
+    cout << "You ordered a" << yourDrink.drinkName << "at" << yourDrink.drinkTemp << "and the total is" << yourDrink.drinkCost << endl; 
     
     return 0;
 }
