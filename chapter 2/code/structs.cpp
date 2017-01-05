@@ -3,15 +3,16 @@
 #include <sstream>
 using namespace std; 
 
+
 struct drinks {
     
     int drinkTemp; 
     string drinkName; 
-    double drinkCost;    
+    unsigned float drinkCost;    
     
-}
+} yourDrink;
 
-int getTemp(void) {
+int getTemp() {
     
     cout << "What's the temperater you want your drink?" << endl; 
     
@@ -21,7 +22,7 @@ int getTemp(void) {
     
 }
 
-string getName(void) {
+string getName() {
     
     string name; 
     cout << "What's the name of your drink?" << endl; 
@@ -29,13 +30,20 @@ string getName(void) {
     return name;
 }
 
-double getCost(void) {
+unsigned float getCost() {
     
+    cout << "You don't get to choose your drink cost. Just assume it's really expensive." << endl; 
     
+    const unsigned float myCost = 4.75;
     
+    return myCost;
 }
 
 int main() {
+    
+    yourDrink.drinkTemp = getTemp(); 
+    yourDrink.drinkName = getName();
+    yourDrink.drinkCost = getCost(); 
     
     
     return 0;
