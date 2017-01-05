@@ -13,7 +13,13 @@ struct drinks {
 
 int getTemp(void) {
     
+    cout << "What's the temperater you want your drink?" << endl; 
     
+    int temperature; 
+    
+    cin >> temperature; 
+    
+    return temperature;
     
 }
 
