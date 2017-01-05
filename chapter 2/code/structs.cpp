@@ -13,8 +13,7 @@ struct drinks {
 
 int getTemp() {
     
-    cout << "What's the temperater you want your drink?" << endl; 
-    
+    cout << "What's the temperature you want your drink?" << endl; 
     int temperature; 
     cin >> temperature; 
     return temperature;
@@ -31,20 +30,23 @@ string getName() {
 
 float getCost() {
     
-    cout << "You don't get to choose your drink cost. Just assume it's really expensive." << endl; 
-    
-     float myCost = 4.75;
+    float myCost = 4.75;
     
     return myCost;
 }
 
+void printDrinkOrder() {
+    
+   cout << "You ordered a " << yourDrink.drinkName << " at " << yourDrink.drinkTemp << " degrees" << endl << "and the total is: $" << yourDrink.drinkCost << endl;  
+    
+}
 int main() {
     
     yourDrink.drinkTemp = getTemp(); 
     yourDrink.drinkName = getName();
     yourDrink.drinkCost = getCost(); 
-    
-    cout << "You ordered a" << yourDrink.drinkName << "at" << yourDrink.drinkTemp << "and the total is" << yourDrink.drinkCost << endl; 
+
+    printDrinkOrder();
     
     return 0;
 }
